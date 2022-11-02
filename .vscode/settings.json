@@ -1,0 +1,8 @@
+{
+    "cSpell.words": [
+        "shogi"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=130"
+    ]
+}

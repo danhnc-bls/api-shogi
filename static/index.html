@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shogi</title>
+
+    <script src="/static/fabric.min.js"></script>
+</head>
+
+<body>
+    <p>
+        ボタンを押すとゲームが始まります：強さ-->
+        <button onclick="handleStartGame(1)">弱</button>
+        <button onclick="handleStartGame(2)">中</button>
+        <button onclick="handleStartGame(3)">強</button>
+    </p>
+
+    <hr />
+
+    <div style="display: flex; margin: 64px">
+        <canvas id="canvas" width="385" height="535"></canvas>
+        <div style="max-width: 200px; margin-left: 48px">
+            <p style="margin-top: 0px; font-size: 24px">棋譜</p>
+            <textarea readonly id="kihu" style="height: 555px; width: 150px"></textarea>
+        </div>
+    </div>
+
+    <h1 id="message" style="color: red"></h1>
+
+    <span style="position: absolute; top: 156px; left: 36px; font-size: 24px">1</span>
+    <span style="position: absolute; top: 244px; left: 36px; font-size: 24px">2</span>
+    <span style="position: absolute; top: 332px; left: 36px; font-size: 24px">3</span>
+    <span style="position: absolute; top: 420px; left: 36px; font-size: 24px">4</span>
+    <span style="position: absolute; top: 508px; left: 36px; font-size: 24px">5</span>
+    <span style="position: absolute; top: 596px; left: 36px; font-size: 24px">6</span>
+    <span style="position: absolute; top: 684px; left: 36px; font-size: 24px">7</span>
+
+    <span style="position: absolute; top: 82px; left: 110px; font-size: 24px">A</span>
+    <span style="position: absolute; top: 82px; left: 202px; font-size: 24px">B</span>
+    <span style="position: absolute; top: 82px; left: 296px; font-size: 24px">C</span>
+    <span style="position: absolute; top: 82px; left: 388px; font-size: 24px">D</span>
+    <span style="position: absolute; top: 82px; left: 484px; font-size: 24px">E</span>
+
+    <script src="/static/shogi.js"></script>
+</body>
+
+</html>
